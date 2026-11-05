@@ -1,69 +1,96 @@
-Ojo David Oluwadarasimi
+Ojo David Oluwadarasimi — Personal Portfolio
 
-Aspiring AI Engineer | Systems Engineering | Quantitative Development
+Building Today. Engineering Tomorrow.
 
-I am a Software Engineering student passionate about technology, problem-solving and building meaningful digital solutions.
+Welcome to my personal portfolio repository.
 
-My interests span Artificial Intelligence, Systems Engineering, Quantitative Development and Software Engineering. I am continuously developing my technical knowledge, strengthening my engineering fundamentals and translating what I learn into practical projects.
+This website is the central place to explore my work, technical interests, projects, and development journey. It represents my commitment to learning, building practical solutions, and continuously improving as an engineer.
 
-I believe in learning by building, understanding systems from the ground up and writing software that solves real problems.
+Live Website: "ojodavidoluwadarasimi.netlify.app" (https://ojodavidoluwadarasimi.netlify.app/)
 
 ---
 
-About Me
+About the Project
 
-- Studying Software Engineering.
-- Exploring Artificial Intelligence and Machine Learning.
-- Developing an interest in scalable and high-performance systems.
-- Exploring algorithms, computational problem-solving and quantitative development.
-- Building web applications and practical software projects.
-- Continuously improving through hands-on development and independent learning.
+The portfolio was created to establish a professional online presence where visitors can learn about my background, explore selected projects, understand my technical interests, and connect with me.
 
-Technical Interests
+It is designed to communicate my work and development journey in a straightforward, accessible format.
 
-Area| Focus
-Artificial Intelligence| AI applications, machine learning and intelligent systems
-Systems Engineering| Software architecture, operating systems and distributed systems
-Quantitative Development| Algorithms, computational methods and financial technology
-Software Engineering| Programming, data structures, algorithms and software design
-Web Development| Frontend development, backend systems and web applications
+What You'll Find
 
-Technologies & Tools
+- About Me: An introduction to my background, interests, and engineering journey.
+- Technical Skills: An overview of my current technical skills and areas of development.
+- Featured Projects: Selected projects demonstrating practical learning and implementation.
+- Learning Journey: My approach to developing technical knowledge through consistent practice.
+- Contact: Direct ways to connect with me professionally.
 
-My technical toolkit is continuously evolving as I learn and build.
+Featured Projects
 
-- Programming: Python, JavaScript, C++
-- Web Development: HTML, CSS, JavaScript
-- Development Tools: Git, GitHub, VS Code
-- Areas of Study: Data Structures & Algorithms, Object-Oriented Programming, Databases and Computer Systems
+1. Personal Portfolio
 
-What I'm Currently Working On
+A professional website designed to showcase my technical interests, skills, projects, and contact information.
 
-- Strengthening my programming and problem-solving fundamentals.
-- Exploring AI engineering and machine learning.
-- Learning systems programming and software architecture.
-- Developing my understanding of algorithms and quantitative computing.
-- Building and improving practical software projects.
+2. CBT Learning Platform
 
-Featured Portfolio
+A student-focused learning platform designed to support examination preparation through practice questions, explanations, and interactive learning.
 
-Explore my portfolio to see my work, creative projects and development journey.
+3. Business Chatbot
 
-Live Portfolio:
-https://ojodavidoluwadarasimi.netlify.app/
+A customer-support chatbot concept designed to help businesses handle common enquiries and guide potential customers towards relevant actions.
+
+Technologies
+
+The portfolio is built around core web technologies:
+
+- HTML5
+- CSS3
+- JavaScript
+- Git
+- GitHub
+
+Running Locally
+
+To explore the project on your local machine:
+
+1. Clone the repository:
+   
+   git clone https://github.com/ojodavidoluwadarasimi/ojodavid-portfolio.git
+
+2. Navigate into the project directory:
+   
+   cd My-Portfolio-site
+
+3. Open "index.html" in your browser.
+
+If your repository has a different name, replace "My-Portfolio-Site" with its actual name.
+
+Deployment
+
+The live portfolio is hosted on Netlify.
+
+Visit the deployed website:
+
+"https://ojodavidoluwadarasimi.netlify.app/" (https://ojodavidoluwadarasimi.netlify.app/)
 
 Connect With Me
 
-- LinkedIn: https://www.linkedin.com/in/ojodavidoluwadarasimi
+I'm open to connecting with developers, engineers, technology enthusiasts, recruiters, and people interested in building meaningful digital products.
 
-- Portfolio: https://ojodavidoluwadarasimi.netlify.app/
-
-- Email: ojodavidoluwadarasimi.pro@gmail.com
+- LinkedIn: "Connect with me" (https://www.linkedin.com/in/ojodavidoluwadarasimi)
+- GitHub: "Explore my repositories" (https://github.com/ojodavidoluwadarasimi)
+- Portfolio: "Visit my website" (https://ojodavidoluwadarasimi.netlify.app/)
+- Email: "ojodavidoluwadarasimi.pro@gmail.com" (mailto:ojodavidoluwadarasimi.pro@gmail.com)
 
 ---
 
-My Engineering Philosophy
+Project Vision
 
-I am committed to understanding technology beyond the surface, building with intention and continuously improving as an engineer.
+I believe engineering is more than writing code. It is about understanding problems, developing sound solutions, and continuously improving the way things work.
 
-Learn deeply. Build consistently. Engineer intelligently.
+This portfolio will continue to evolve as I build new projects, strengthen my technical foundation, and explore new areas of technology.
+
+Learn. Build. Innovate. Repeat.
+
+---
+
+© 2026 Ojo David Oluwadarasimi. All rights reserved.
