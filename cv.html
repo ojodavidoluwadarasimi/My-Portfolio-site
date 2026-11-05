@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ojo David Oluwadarasimi - CV</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.5;
+      color: #333;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+
+    .cv-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #fff;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    }
+
+    /* Header */
+    .header {
+      background: #1a1a1a;
+      color: #fff;
+      padding: 30px 40px;
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .photo {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 4px solid #d4a84b;
+      object-fit: cover;
+      background: #444;
+      flex-shrink: 0;
+    }
+
+    .header-info h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+
+    .header-info .title {
+      color: #d4a84b;
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .header-info .contact {
+      font-size: 13px;
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    .header-info .contact a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    /* Main content */
+    .content {
+      padding: 30px 40px 40px;
+    }
+
+    section {
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #1a1a1a;
+      border-bottom: 2px solid #d4a84b;
+      padding-bottom: 6px;
+      margin-bottom: 14px;
+    }
+
+    p {
+      font-size: 14px;
+      text-align: justify;
+      color: #444;
+    }
+
+    /* Competencies */
+    .competencies {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px 20px;
+      list-style: none;
+    }
+
+    .competencies li {
+      font-size: 13.5px;
+      position: relative;
+      padding-left: 14px;
+    }
+
+    .competencies li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #d4a84b;
+      font-weight: bold;
+    }
+
+    /* Education & Projects */
+    .edu-title {
+      font-weight: 600;
+      font-size: 14.5px;
+      margin-bottom: 2px;
+    }
+
+    .edu-school {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .edu-location {
+      font-size: 13px;
+      color: #777;
+      font-style: italic;
+    }
+
+    .project {
+      margin-bottom: 14px;
+    }
+
+    .project-title {
+      font-weight: 600;
+      font-size: 14.5px;
+      margin-bottom: 3px;
+    }
+
+    .project p {
+      font-size: 13.5px;
+      text-align: left;
+    }
+
+    /* Experience */
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 8px;
+    }
+
+    .job-title {
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .job-date {
+      font-size: 13px;
+      color: #666;
+      font-style: italic;
+    }
+
+    .experience-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .experience-list li {
+      font-size: 13.5px;
+      position: relative;
+      padding-left: 16px;
+      margin-bottom: 5px;
+    }
+
+    .experience-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #d4a84b;
+      font-weight: bold;
+    }
+
+    /* Languages, Strengths, Interests */
+    .languages {
+      font-size: 14px;
+    }
+
+    .strengths {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 30px;
+      list-style: none;
+    }
+
+    .strengths li {
+      font-size: 13.5px;
+      position: relative;
+      padding-left: 14px;
+    }
+
+    .strengths li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #d4a84b;
+      font-weight: bold;
+    }
+
+    .interests {
+      font-size: 13.5px;
+      color: #444;
+    }
+
+    /* Page break for print */
+    .page-break {
+      page-break-before: always;
+      border-top: 1px solid #eee;
+      margin-top: 20px;
+      padding-top: 20px;
+    }
+
+    /* Footer / page number style (optional) */
+    .page-footer {
+      text-align: right;
+      font-size: 12px;
+      color: #999;
+      margin-top: 20px;
+    }
+
+    @media print {
+      body {
+        background: none;
+        padding: 0;
+      }
+      .cv-container {
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+    <!-- HEADER -->
+    <div class="header">
+      <!-- Replace the src with your actual photo URL or base64 -->
+      <img src="profile.png" alt="Ojo David Oluwadarasimi" class="photo">
+      <div class="header-info">
+        <h1>OJO DAVID OLUWADARASIMI</h1>
+        <div class="title">Aspiring Software Engineer</div>
+        <div class="contact">
+          Ibadan, Oyo State, Nigeria &nbsp;|&nbsp; 08168001035<br>
+          <a href="mailto:"ojodavidoluwadarasimi100@gmail.com" >ojodavidoluwadarasimi100@gmail.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- PROFESSIONAL SUMMARY -->
+      <section>
+        <h2>Professional Summary</h2>
+        <p>
+          Highly motivated aspiring software engineer with a strong passion for Artificial Intelligence, data annotation, research, and technology. Experienced in using AI tools, web development, technical writing, online research, and digital problem solving. Recognized for exceptional attention to detail, analytical thinking, and the ability to follow complex instructions with accuracy. Dedicated to delivering high quality work within deadlines while continuously learning new technologies.
+        </p>
+      </section>
+
+      <!-- CORE COMPETENCIES -->
+      <section>
+        <h2>Core Competencies</h2>
+        <ul class="competencies">
+          <li>Artificial Intelligence Tools</li>
+          <li>Prompt Engineering</li>
+          <li>Data Annotation</li>
+          <li>AI Model Evaluation</li>
+          <li>Internet Research</li>
+          <li>Technical Writing</li>
+          <li>Content Evaluation</li>
+          <li>Fact Checking</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Responsive Web Design</li>
+          <li>Microsoft Word</li>
+          <li>Microsoft Excel</li>
+          <li>Google Docs</li>
+          <li>Google Sheets</li>
+          <li>Fast Typing</li>
+          <li>Attention to Detail</li>
+          <li>Critical Thinking</li>
+          <li>Problem Solving</li>
+          <li>Time Management</li>
+        </ul>
+      </section>
+
+      <!-- EDUCATION -->
+      <section>
+        <h2>Education</h2>
+        <div class="edu-title">Bachelor of Science in Software Engineering (In Progress)</div>
+        <div class="edu-school">Obafemi Awolowo University</div>
+        <div class="edu-location">Ile Ife, Osun State, Nigeria</div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section>
+        <h2>Projects</h2>
+        <div class="project">
+          <div class="project-title">AI Virtual Receptionist Development</div>
+          <p>Designed AI powered virtual receptionist solutions for businesses using conversational AI technologies to improve customer engagement and automate responses.</p>
+        </div>
+        <div class="project">
+          <div class="project-title">Business Website Development</div>
+          <p>Built responsive and user friendly websites with modern layouts while focusing on usability and performance.</p>
+        </div>
+        <div class="project">
+          <div class="project-title">AI Productivity Solutions</div>
+          <p>Applied Artificial Intelligence tools for research, writing assistance, workflow automation, and content improvement.</p>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE (Page 2 content) -->
+      <section class="page-break">
+        <h2>Experience</h2>
+        <div class="job-header">
+          <div class="job-title">Freelance Digital Solutions</div>
+          <div class="job-date">2024 to Present</div>
+        </div>
+        <ul class="experience-list">
+          <li>Developed responsive websites for businesses.</li>
+          <li>Assisted businesses with digital transformation solutions.</li>
+          <li>Conducted online research and information analysis.</li>
+          <li>Created professional written content.</li>
+          <li>Used Artificial Intelligence tools to improve productivity and efficiency.</li>
+          <li>Managed projects while consistently meeting deadlines.</li>
+        </ul>
+      </section>
+
+      <!-- LANGUAGES -->
+      <section>
+        <h2>Languages</h2>
+        <div class="languages">English (Fluent)</div>
+      </section>
+
+      <!-- STRENGTHS -->
+      <section>
+        <h2>Strengths</h2>
+        <ul class="strengths">
+          <li>Excellent attention to detail</li>
+          <li>Strong analytical thinking</li>
+          <li>Quick learner</li>
+          <li>Excellent written communication</li>
+          <li>Reliable and organized</li>
+          <li>Team collaboration</li>
+          <li>Adaptability</li>
+          <li>Ability to work independently</li>
+        </ul>
+      </section>
+
+      <!-- INTERESTS -->
+      <section>
+        <h2>Interests</h2>
+        <div class="interests">
+          Artificial Intelligence • Machine Learning • Software Development • Data Annotation • Research • Emerging Technologies • Data Analysis
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
