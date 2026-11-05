@@ -79,7 +79,7 @@ I'm open to connecting with developers, engineers, technology enthusiasts, recru
 - LinkedIn: https://www.linkedin.com/in/ojodavidoluwadarasimi
 - GitHub: https://github.com/ojodavidoluwadarasimi
 - Portfolio: https://ojodavidoluwadarasimi.netlify.app/
-- Email: ojodavidoluwadarasimi.pro@gmail.com
+- Email: ojodavidoluwadarasimi100@gmail.com
 
 ---
 
