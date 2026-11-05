@@ -10,7 +10,7 @@ Live Website: https://ojodavidoluwadarasimi.netlify.app/
 
 ---
 
-About the Project
+About The Project
 
 The portfolio was created to establish a professional online presence where visitors can learn about my background, explore selected projects, understand my technical interests, and connect with me.
 
