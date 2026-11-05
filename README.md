@@ -1,9 +1,8 @@
-<div align="center">
+<div align="left">
 
 **Ojo David Oluwadarasimi**
-**Personal Portfolio**
 
-*Building Today. Engineering Tomorrow.*
+**Personal Portfolio**
 
 <a href="https://ojodavidoluwadarasimi.netlify.app/"><img src="https://img.shields.io/badge/VIEW_LIVE_SITE-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="View Live Site"></a>
 
@@ -65,7 +64,7 @@ I'm open to connecting with developers, engineers, recruiters and anyone interes
 <a href="https://www.linkedin.com/in/ojodavidoluwadarasimi"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20" height="20" alt="LinkedIn"></a>&nbsp; <a href="https://www.linkedin.com/in/ojodavidoluwadarasimi">https://www.linkedin.com/in/ojodavidoluwadarasimi</a><br><br>
 <a href="https://github.com/ojodavidoluwadarasimi"><img src="https://cdn.simpleicons.org/github/8b949e" width="20" height="20" alt="GitHub"></a>&nbsp; <a href="https://github.com/ojodavidoluwadarasimi">https://github.com/ojodavidoluwadarasimi</a><br><br>
 <a href="https://ojodavidoluwadarasimi.netlify.app/"><img src="https://cdn.simpleicons.org/netlify/00C7B7" width="20" height="20" alt="Portfolio"></a>&nbsp; <a href="https://ojodavidoluwadarasimi.netlify.app/">https://ojodavidoluwadarasimi.netlify.app/</a><br><br>
-<a href="mailto:ojodavidoluwadarasimi.pro@gmail.com"><img src="https://cdn.simpleicons.org/gmail/EA4335" width="20" height="20" alt="Email"></a>&nbsp; <a href="mailto:ojodavidoluwadarasimi.pro@gmail.com">ojodavidoluwadarasimi.pro@gmail.com</a>
+<a href="mailto:ojodavidoluwadarasimi.pro@gmail.com"><img src="https://cdn.simpleicons.org/gmail/EA4335" width="20" height="20" alt="Email"></a>&nbsp; <a href="mailto:ojodavidoluwadarasimi100@gmail.com">ojodavidoluwadarasimi100@gmail.com</a>
 </p>
 
 ---
