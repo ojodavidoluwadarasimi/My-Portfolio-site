@@ -6,7 +6,7 @@ Welcome to my personal portfolio repository.
 
 This website is the central place to explore my work, technical interests, projects, and development journey. It represents my commitment to learning, building practical solutions, and continuously improving as an engineer.
 
-Live Website: "ojodavidoluwadarasimi.netlify.app" (https://ojodavidoluwadarasimi.netlify.app/)
+Live Website: https://ojodavidoluwadarasimi.netlify.app/
 
 ---
 
@@ -54,7 +54,7 @@ To explore the project on your local machine:
 
 1. Clone the repository:
    
-   git clone https://github.com/ojodavidoluwadarasimi/ojodavid-portfolio.git
+   git clone https://github.com/ojodavidoluwadarasimi/My-Portfolio-site.git
 
 2. Navigate into the project directory:
    
@@ -70,16 +70,16 @@ The live portfolio is hosted on Netlify.
 
 Visit the deployed website:
 
-"https://ojodavidoluwadarasimi.netlify.app/" (https://ojodavidoluwadarasimi.netlify.app/)
+https://ojodavidoluwadarasimi.netlify.app/
 
 Connect With Me
 
 I'm open to connecting with developers, engineers, technology enthusiasts, recruiters, and people interested in building meaningful digital products.
 
-- LinkedIn: "Connect with me" (https://www.linkedin.com/in/ojodavidoluwadarasimi)
-- GitHub: "Explore my repositories" (https://github.com/ojodavidoluwadarasimi)
-- Portfolio: "Visit my website" (https://ojodavidoluwadarasimi.netlify.app/)
-- Email: "ojodavidoluwadarasimi.pro@gmail.com" (mailto:ojodavidoluwadarasimi.pro@gmail.com)
+- LinkedIn: https://www.linkedin.com/in/ojodavidoluwadarasimi
+- GitHub: https://github.com/ojodavidoluwadarasimi
+- Portfolio: https://ojodavidoluwadarasimi.netlify.app/
+- Email: ojodavidoluwadarasimi.pro@gmail.com
 
 ---
 
