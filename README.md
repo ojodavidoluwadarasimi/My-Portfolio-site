@@ -55,7 +55,7 @@ https://ojodavidoluwadarasimi.netlify.app/
 Connect With Me
 
 - LinkedIn: https://www.linkedin.com/in/ojodavidoluwadarasimi
-- 
+
 - Portfolio: https://ojodavidoluwadarasimi.netlify.app/
 
 - Email: ojodavidoluwadarasimi.pro@gmail.com
