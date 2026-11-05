@@ -1,106 +1,87 @@
-Ojo David Oluwadarasimi — Personal Portfolio
+<div align="center">
 
-Building Today. Engineering Tomorrow.
+**Ojo David Oluwadarasimi**
+**Personal Portfolio**
 
-Welcome to my personal portfolio repository.
+*Building Today. Engineering Tomorrow.*
 
-This website is the central place to explore my work, technical interests, projects, and development journey. It represents my commitment to learning, building practical solutions, and continuously improving as an engineer.
+<a href="https://ojodavidoluwadarasimi.netlify.app/"><img src="https://img.shields.io/badge/VIEW_LIVE_SITE-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="View Live Site"></a>
 
-Live Website: https://ojodavidoluwadarasimi.netlify.app/
-
----
-
-About The Project
-
-The portfolio was created to establish a professional online presence where visitors can learn about my background, explore selected projects, understand my technical interests, and connect with me.
-
-It is designed to communicate my work and development journey in a straightforward, accessible format.
-
-What You'll Find
-
-- About Me: An introduction to my background, interests, and engineering journey.
-- Technical Skills: An overview of my current technical skills and areas of development.
-- Featured Projects: Selected projects demonstrating practical learning and implementation.
-- Learning Journey: My approach to developing technical knowledge through consistent practice.
-- Contact: Direct ways to connect with me professionally.
-
----
-  
-Featured Projects
-
-1. Personal Portfolio
-
-A professional website designed to showcase my technical interests, skills, projects, and contact information.
-
-2. CBT Learning Platform
-
-A student-focused learning platform designed to support examination preparation through practice questions, explanations, and interactive learning.
-
-3. Business Chatbot
-
-A customer-support chatbot concept designed to help businesses handle common enquiries and guide potential customers towards relevant actions.
+</div>
 
 ---
 
-Technologies
+**About The Project**
 
-The portfolio is built around core web technologies:
+This is the central place to explore my work, technical interests and development journey. It gives visitors a clear, simple look at my background, the projects I'm building and how to reach me.
 
-- HTML5
-- CSS3
-- JavaScript
-- Git
-- GitHub
+**What You'll Find**
 
----
-
-Running Locally
-
-To explore the project on your local machine:
-
-1. Clone the repository:
-   
-   git clone https://github.com/ojodavidoluwadarasimi/My-Portfolio-site.git
-
-2. Navigate into the project directory:
-   
-   cd My-Portfolio-site
-
-3. Open "index.html" in your browser.
-
-If your repository has a different name, replace "My-Portfolio-Site" with its actual name.
+| Section | What it covers |
+|---------|----------------|
+| **About Me** | My background, interests and engineering journey |
+| **Technical Skills** | My current skills and the areas I'm developing |
+| **Featured Projects** | Selected projects that show practical learning |
+| **Learning Journey** | How I build technical knowledge through consistent practice |
+| **Contact** | Direct ways to connect with me professionally |
 
 ---
 
-Deployment
+**Featured Projects**
 
-The live portfolio is hosted on Netlify.
-
-Visit the deployed website:
-
-https://ojodavidoluwadarasimi.netlify.app/
-
----
-
-Connect With Me
-
-I'm open to connecting with developers, engineers, technology enthusiasts, recruiters, and people interested in building meaningful digital products.
-
-- LinkedIn: https://www.linkedin.com/in/ojodavidoluwadarasimi
-- GitHub: https://github.com/ojodavidoluwadarasimi
-- Portfolio: https://ojodavidoluwadarasimi.netlify.app/
-- Email: ojodavidoluwadarasimi100@gmail.com
+| Project | Description | Status |
+|---------|-------------|--------|
+| **Personal Portfolio** | A professional website showcasing my skills, projects and contact information. | Live |
+| **CBT Learning Platform** | A student-focused platform for exam preparation with practice questions, explanations and interactive learning. | In progress |
+| **Business Chatbot** | A customer-support chatbot concept that helps businesses answer common enquiries and guide customers to the right action. | Concept |
 
 ---
 
-Project Vision
+**Built With**
 
-I believe engineering is more than writing code. It is about understanding problems, developing sound solutions, and continuously improving the way things work.
+<p>
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"> <img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"> <img src="https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"> <img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"> <img src="https://img.shields.io/badge/NETLIFY-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Netlify">
+</p>
 
-This portfolio will continue to evolve as I build new projects, strengthen my technical foundation, and explore new areas of technology.
+---
 
-Learn. Build. Innovate. Repeat.
+## Run It Locally
+
+1. Clone the repository: `git clone https://github.com/ojodavidoluwadarasimi/My-Portfolio-site.git`
+2. Go into the project folder: `cd My-Portfolio-site`
+3. Open `index.html` in your browser.
+
+## Deployment
+
+The portfolio is hosted on Netlify: https://ojodavidoluwadarasimi.netlify.app/
+
+---
+
+## Connect With Me
+
+I'm open to connecting with developers, engineers, recruiters and anyone interested in building meaningful digital products.
+
+<p>
+<a href="https://www.linkedin.com/in/ojodavidoluwadarasimi"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="20" height="20" alt="LinkedIn"></a>&nbsp; <a href="https://www.linkedin.com/in/ojodavidoluwadarasimi">https://www.linkedin.com/in/ojodavidoluwadarasimi</a><br><br>
+<a href="https://github.com/ojodavidoluwadarasimi"><img src="https://cdn.simpleicons.org/github/8b949e" width="20" height="20" alt="GitHub"></a>&nbsp; <a href="https://github.com/ojodavidoluwadarasimi">https://github.com/ojodavidoluwadarasimi</a><br><br>
+<a href="https://ojodavidoluwadarasimi.netlify.app/"><img src="https://cdn.simpleicons.org/netlify/00C7B7" width="20" height="20" alt="Portfolio"></a>&nbsp; <a href="https://ojodavidoluwadarasimi.netlify.app/">https://ojodavidoluwadarasimi.netlify.app/</a><br><br>
+<a href="mailto:ojodavidoluwadarasimi.pro@gmail.com"><img src="https://cdn.simpleicons.org/gmail/EA4335" width="20" height="20" alt="Email"></a>&nbsp; <a href="mailto:ojodavidoluwadarasimi.pro@gmail.com">ojodavidoluwadarasimi.pro@gmail.com</a>
+</p>
+
+---
+
+**Project Vision**
+
+Engineering is more than writing code. It is about understanding problems, building sound solutions and improving the way things work.
+
+This portfolio will keep evolving as I build new projects and strengthen my technical foundation.
+
+<div align="center">
+
+**Learn. Build. Innovate. Repeat.**
 
 ---
 
 © 2026 Ojo David Oluwadarasimi. All rights reserved.
+
+</div>
