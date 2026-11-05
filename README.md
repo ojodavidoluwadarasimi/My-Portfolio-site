@@ -24,6 +24,8 @@ What You'll Find
 - Learning Journey: My approach to developing technical knowledge through consistent practice.
 - Contact: Direct ways to connect with me professionally.
 
+---
+  
 Featured Projects
 
 1. Personal Portfolio
@@ -38,6 +40,8 @@ A student-focused learning platform designed to support examination preparation 
 
 A customer-support chatbot concept designed to help businesses handle common enquiries and guide potential customers towards relevant actions.
 
+---
+
 Technologies
 
 The portfolio is built around core web technologies:
@@ -47,6 +51,8 @@ The portfolio is built around core web technologies:
 - JavaScript
 - Git
 - GitHub
+
+---
 
 Running Locally
 
@@ -64,6 +70,8 @@ To explore the project on your local machine:
 
 If your repository has a different name, replace "My-Portfolio-Site" with its actual name.
 
+---
+
 Deployment
 
 The live portfolio is hosted on Netlify.
@@ -71,6 +79,8 @@ The live portfolio is hosted on Netlify.
 Visit the deployed website:
 
 https://ojodavidoluwadarasimi.netlify.app/
+
+---
 
 Connect With Me
 
