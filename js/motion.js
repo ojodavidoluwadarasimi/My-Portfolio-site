@@ -45,6 +45,7 @@
   var scrollDir=1,lastScroll=0;
   function req(){if(!tick){tick=true;requestAnimationFrame(update)}}
   addEventListener('scroll',req,{passive:true});
+  addEventListener('scroll',function(){if(!shown&&performance.now()-lastShow>6000&&scrollY>vh*.3)peek(5200)},{passive:true});
   addEventListener('resize',function(){vh=innerHeight;vw=innerWidth;sides();req()});
   sides();
   /* images and fonts can move cards: re-measure once things settle */
@@ -86,19 +87,24 @@
   addEventListener('touchstart',function(e){var t=e.touches[0];if(t)aim(t.clientX,t.clientY)},{passive:true});
   addEventListener('touchmove',function(e){var t=e.touches[0];if(t)aim(t.clientX,t.clientY)},{passive:true});
   function look(now){
-    var idle=now-lastPtr>3500,recentScroll=now-lastScroll<500;
+    var idle=now-lastPtr>3500,scrolling=now-lastScroll<650,lid='-102%',ps=1;
     eyeEls.forEach(function(el,k){
-      var r=el.getBoundingClientRect(),cx=r.left+r.width/2,cy=r.top+r.height/2,mx=r.width*.2,my=r.height*.22,dx,dy;
-      if(idle){ /* nobody is pointing: look straight out at the visitor, drifting a little, down when scrolling */
-        dx=Math.sin(now/1900+k*.4)*mx*.35;dy=(recentScroll?scrollDir*my*.8:Math.cos(now/2300)*my*.25);
+      var r=el.getBoundingClientRect(),cx=r.left+r.width/2,cy=r.top+r.height/2,mx=r.width*.2,my=r.height*.27,dx,dy;
+      if(scrolling){ /* scroll down: look down. scroll up: look up. */
+        dx=Math.sin(now/700+k*.5)*mx*.12;dy=scrollDir*my;
+      }else if(idle){ /* nobody is pointing: look straight out at the visitor, drifting a little */
+        dx=Math.sin(now/1900+k*.4)*mx*.35;dy=Math.cos(now/2300)*my*.25;
       }else{
         var vx=tx-cx,vy=ty-cy,d=Math.hypot(vx,vy)||1,f=Math.min(1,d/220);
         dx=vx/d*mx*f;dy=vy/d*my*f;
-        if(recentScroll)dy=dy*.4+scrollDir*my*.6;
+        if(onLink)ps=1.28;
       }
       pup[k].style.setProperty('--px',dx.toFixed(1)+'px');pup[k].style.setProperty('--py',dy.toFixed(1)+'px');
-      pup[k].style.setProperty('--ps',onLink&&!idle?1.28:1);
+      pup[k].style.setProperty('--ps',ps);
     });
+    /* upper lids droop a little when looking down, open wide when looking up */
+    if(scrolling)lid=scrollDir>0?'-84%':'-108%';
+    eyes.style.setProperty('--lid',lid);
     requestAnimationFrame(look);
   }
   requestAnimationFrame(look);
@@ -108,13 +114,18 @@
   }
   (function blinkLoop(){setTimeout(function(){if(shown)blink();blinkLoop()},2200+Math.random()*3200)})();
   function menuOpen(){return document.body.classList.contains('lock')}
+  function hide(){
+    eyes.classList.add('sleepy');
+    setTimeout(function(){eyes.classList.remove('show','sleepy');shown=false;lastShow=performance.now()},700);
+  }
   function peek(ms){
     var now=performance.now();
     if(shown||menuOpen()||now-lastShow<7000)return;
     shown=true;lastShow=now;eyes.classList.add('show');
-    clearTimeout(hideT);
-    hideT=setTimeout(function(){eyes.classList.add('sleepy');setTimeout(function(){eyes.classList.remove('show','sleepy');shown=false;lastShow=performance.now()},700)},ms||5200);
+    clearTimeout(hideT);hideT=setTimeout(hide,ms||5200);
   }
+  /* while the visitor is scrolling the eyes stay, so they can be watched looking down and up */
+  addEventListener('scroll',function(){if(shown){clearTimeout(hideT);hideT=setTimeout(hide,3200)}},{passive:true});
   /* appear whenever a new section comes into view, and now and then on its own */
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting&&e.target.id!=='home')peek(5200)})},{threshold:.45});
   [].forEach.call(document.querySelectorAll('main>section'),function(s){io.observe(s)});
