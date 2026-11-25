@@ -93,11 +93,18 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .btn.p:hover{background:#33ff9a}
 .btn.g:hover{border-color:var(--acc);color:var(--acc)}
 .hero.skip *{animation-duration:.01s!important;animation-delay:0s!important}
-.cue{position:absolute;z-index:3;right:var(--gut);bottom:34px;display:flex;flex-direction:column;align-items:center;gap:10px;color:var(--mute);writing-mode:vertical-rl;animation:fadeup 1s ease 5s both}
-.cue i{display:block;width:1px;height:46px;background:linear-gradient(var(--acc),transparent)}
+.cue{position:absolute;z-index:4;left:0;right:0;margin:0 auto;width:max-content;bottom:30px;display:flex;flex-direction:column;align-items:center;gap:12px;color:var(--mute);text-decoration:none;animation:fadeup 1s ease 5s both}
+.cue span{font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;padding-left:.3em}
+.cue-btn{position:relative;display:grid;place-items:center;width:54px;height:54px;border-radius:50%;border:1px solid rgba(0,230,118,.5);background:rgba(9,11,13,.55);backdrop-filter:blur(6px);color:var(--acc);transition:background .35s,color .35s,transform .35s var(--ease)}
+.cue-btn::after{content:"";position:absolute;inset:-1px;border-radius:50%;border:1px solid var(--acc);animation:cuering 2.4s ease-out infinite}
+.cue-btn svg{width:22px;height:22px;animation:cuebob 1.8s ease-in-out infinite}
+.cue:hover .cue-btn,.cue:focus-visible .cue-btn{background:var(--acc);color:#06130B;transform:translateY(3px)}
+.cue:focus-visible{outline:2px solid var(--acc);outline-offset:6px;border-radius:30px}
+@keyframes cuebob{0%,100%{transform:translateY(-3px)}50%{transform:translateY(4px)}}
+@keyframes cuering{0%{transform:scale(1);opacity:.55}100%{transform:scale(1.55);opacity:0}}
 
 /* sections */
-section{position:relative;padding:clamp(80px,13vw,170px) 0}
+section{position:relative;padding:clamp(72px,9vw,130px) 0}
 .sec-head{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,2.1fr);gap:clamp(20px,4vw,64px);align-items:start;margin-bottom:clamp(36px,6vw,80px)}
 .sec-head .mono{color:var(--acc);padding-top:.9em}
 h2{font-family:var(--display);font-weight:400;text-transform:uppercase;line-height:.98;letter-spacing:-.01em;font-size:clamp(2rem,5.6vw,4.6rem)}
@@ -204,7 +211,6 @@ footer{border-top:1px solid var(--line);padding:46px 0 40px}
   .hero-copy{padding:104px 0 0;display:flex;flex-direction:column;min-height:100svh}
   .actions{margin-top:auto;padding-bottom:calc(28px + env(safe-area-inset-bottom))}
   .name{font-size:clamp(1.6rem,calc((100vw - var(--gut)*2)/9.7),6.6rem)}
-  .cue{display:none}
 }
 @media(max-width:760px){
   .portrait{right:50%;animation-name:riseM}
@@ -221,16 +227,30 @@ footer{border-top:1px solid var(--line);padding:46px 0 40px}
   .rv,.js .badges .badge{opacity:1!important;transform:none!important}
   h2 .ln span,.name .ln span{transform:none!important}
   .portrait{transform:none;opacity:1}
-  @media(max-width:760px){.portrait{transform:translateX(50%)}}
+  @media(max-width:1100px){.portrait{transform:translateX(50%)}}
   .menu a{transform:none}
 }
 
-/* Mobile hero: large portrait, name sits just under the chin and overlaps the jacket */
-@media(max-width:760px){
-  .hero{--wp:min(140vw,640px,62svh);min-height:0}
+/* Tablet and phone hero: large portrait, name sits just under the chin and overlaps the jacket.
+   Height never depends on a very tall viewport (e.g. phone "Desktop site" mode). */
+@media(max-width:1100px){
+  .hero{--wp:min(140vw,640px,62svh,820px);min-height:0}
   .hero-copy{min-height:0}
   .portrait{width:var(--wp);top:72px;bottom:auto;right:50%}
   .hero-copy{padding-top:calc(72px + var(--wp)*.5)}
   .actions{margin-top:26px;padding-bottom:calc(36px + env(safe-area-inset-bottom))}
   .name,.roles,.tagline{text-shadow:0 2px 18px rgba(9,11,13,.65)}
+  .portrait{animation-name:riseM}
+  @keyframes riseM{from{transform:translate(50%,112%) scale(.93);opacity:0}55%{opacity:1}to{transform:translate(50%,0) scale(1);opacity:1}}
 }
+
+@media(max-width:760px){
+  .cue{bottom:18px;gap:8px}
+  .cue-btn{width:46px;height:46px}
+  .actions{padding-bottom:calc(116px + env(safe-area-inset-bottom))}
+}
+@media(prefers-reduced-motion:reduce){.cue-btn::after,.cue-btn svg{animation:none}}
+
+/* Phone "Desktop site" mode (set by js/dm.js): scale up, and undo the zoom on viewport based type */
+html.dm{zoom:var(--z,1.7)}
+html.dm .name{font-size:clamp(1.6rem,calc((100vw / var(--z,1.7) - var(--gut)*2) / 9.7),6.6rem)}
