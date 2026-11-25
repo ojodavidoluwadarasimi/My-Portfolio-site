@@ -25,3 +25,6 @@ Accent `#00E676`, background `#090B0D`. Change them in `:root` at the top of `cs
 - `css/sections.css` styles the new sections. `js/data.js` holds Notebook articles, planned lab experiments and the repo list: add real entries there only.
 - `js/github.js` loads public repo info from the GitHub API and falls back to static text if it fails.
 - Résumé: `assets/Ojo-David-Oluwadarasimi-Resume.pdf` (linked from About and Contact).
+
+## Capabilities
+- `css/capabilities.css`: "What I Can Build" (6 cards, real screenshots for 01 to 03, labelled illustrative graphics for 04 to 06).
