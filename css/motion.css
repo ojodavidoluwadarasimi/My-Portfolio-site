@@ -46,8 +46,8 @@
 .eyes .eye{position:relative;width:clamp(36px,4.2vw,54px);height:clamp(44px,5.2vw,66px);border-radius:50%;overflow:hidden;background:radial-gradient(circle at 50% 35%,#fff,#DDE6E1);box-shadow:0 0 0 2px rgba(0,230,118,.65),0 10px 34px rgba(0,230,118,.3),inset 0 -6px 12px rgba(0,0,0,.18)}
 .eyes .pupil{position:absolute;left:50%;top:50%;width:52%;height:44%;margin:-22% 0 0 -26%;border-radius:50%;background:radial-gradient(circle at 50% 50%,#020806 0 34%,#00B35F 38%,#00E676 100%);transform:translate(var(--px,0px),var(--py,0px)) scale(var(--ps,1));transition:transform .09s linear}
 .eyes .pupil::after{content:"";position:absolute;left:22%;top:16%;width:22%;height:22%;border-radius:50%;background:#fff;opacity:.9}
-.eyes .lid{position:absolute;inset:-2px;background:linear-gradient(#0B1210,#0F1A16);transform:translateY(-102%);transition:transform .1s ease-in;border-bottom:2px solid rgba(0,230,118,.6)}
-.eyes.blink .lid{transform:translateY(0)}
+.eyes .lid{position:absolute;inset:-2px;background:linear-gradient(#0B1210,#0F1A16);transform:translateY(var(--lid,-102%));transition:transform .28s ease-out;border-bottom:2px solid rgba(0,230,118,.6)}
+.eyes.blink .lid{transform:translateY(0);transition:transform .1s ease-in}
 .eyes.sleepy .lid{transform:translateY(-62%)}
 
 @media (max-width:760px){.band{padding:12px 0}.eyes{bottom:14px;right:12px}}
