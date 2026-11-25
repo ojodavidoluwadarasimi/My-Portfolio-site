@@ -227,7 +227,8 @@ footer{border-top:1px solid var(--line);padding:46px 0 40px}
 
 /* Mobile hero: large portrait, name sits just under the chin and overlaps the jacket */
 @media(max-width:760px){
-  .hero{--wp:min(140vw,640px,62svh)}
+  .hero{--wp:min(140vw,640px,62svh);min-height:0}
+  .hero-copy{min-height:0}
   .portrait{width:var(--wp);top:72px;bottom:auto;right:50%}
   .hero-copy{padding-top:calc(72px + var(--wp)*.5)}
   .actions{margin-top:26px;padding-bottom:calc(36px + env(safe-area-inset-bottom))}
