@@ -1,0 +1,55 @@
+/* Motion layer: scroll progress, folding cards, tilt, marquee, eyes, typing, About expand */
+#sp{position:fixed;left:0;top:0;height:3px;width:100%;z-index:80;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,#00E676,#9CFFC9);box-shadow:0 0 14px rgba(0,230,118,.7);pointer-events:none}
+
+/* About: expand + typing */
+.sr{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.about-more{display:grid;grid-template-rows:1fr}
+.about-more>.am-in{overflow:hidden;min-height:0}
+.js .about-more{grid-template-rows:0fr;transition:grid-template-rows .7s var(--ease)}
+.js .about-more.open{grid-template-rows:1fr}
+.about-body .am-in p{margin-top:1.3em}
+.about-body .am-in p:first-child{margin-top:1.3em}
+.about-body .r{visibility:hidden}
+.caret{display:none;width:2px;height:1.1em;margin:0 1px -.16em 1px;background:var(--acc);box-shadow:0 0 10px rgba(0,230,118,.9)}
+.caret.idle{animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.more{display:none;margin-top:30px}
+.js .more{display:inline-flex}
+.more .chev{width:18px;height:18px;transition:transform .45s var(--ease);animation:chevbob 1.6s ease-in-out infinite}
+.more[aria-expanded="true"] .chev{transform:rotate(180deg);animation:none}
+.more.busy{border-color:var(--acc);color:var(--acc)}
+.more.busy .chev{animation:none;opacity:.4}
+@keyframes chevbob{0%,100%{transform:translateY(-2px)}50%{transform:translateY(3px)}}
+
+/* Folding cards: released as they scroll in */
+.fx.fx{transform:perspective(1100px) translate3d(0,calc((1 - var(--u,1))*80px),0) rotateX(calc((1 - var(--u,1))*-78deg + var(--tx,0deg))) rotateY(calc((1 - var(--u,1))*var(--side,0)*62deg + var(--ty,0deg))) scale(calc(.86 + var(--u,1)*.14));opacity:calc(.04 + var(--u,1)*.96);transition:border-color .4s,background .4s,box-shadow .4s !important;backface-visibility:hidden}
+.fx.moving{will-change:transform,opacity}
+.fx.settle{transition:transform .6s var(--ease),border-color .4s,background .4s !important}
+.fx:not(.vis):not(.p-body){position:relative;isolation:isolate}
+.fx:not(.vis):not(.p-body)::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:1;opacity:0;transition:opacity .35s;background:radial-gradient(380px circle at var(--mx,50%) var(--my,50%),rgba(0,230,118,.16),transparent 62%)}
+.fx:not(.vis):not(.p-body):hover::before{opacity:1}
+.fx:not(.vis):not(.p-body):hover{box-shadow:0 20px 60px -20px rgba(0,230,118,.28)}
+
+/* Skills marquee bands */
+.band{overflow:hidden;padding:18px 0;margin:clamp(10px,2vw,26px) 0;transform:rotate(-1.6deg);border-block:1px solid rgba(0,230,118,.22);background:linear-gradient(90deg,rgba(0,230,118,.06),rgba(0,230,118,.015),rgba(0,230,118,.06));position:relative;z-index:1}
+.band.rev{transform:rotate(1.6deg);margin-top:-6px}
+.band .track{display:flex;align-items:center;gap:clamp(22px,3vw,44px);width:max-content;animation:marq 38s linear infinite}
+.band.rev .track{animation-direction:reverse;animation-duration:46s}
+.band span{font-family:var(--display);font-size:clamp(26px,5vw,64px);line-height:1;text-transform:uppercase;color:transparent;-webkit-text-stroke:1px rgba(238,242,240,.55);white-space:nowrap;transition:color .3s,-webkit-text-stroke-color .3s}
+.band span:hover{color:var(--acc);-webkit-text-stroke-color:var(--acc)}
+.band i{width:12px;height:12px;border-radius:50%;background:var(--acc);box-shadow:0 0 14px var(--acc);flex:none}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* Eyes */
+.eyes{position:fixed;right:clamp(14px,3vw,36px);bottom:clamp(14px,3vh,28px);z-index:55;display:flex;gap:8px;pointer-events:none;opacity:0;transform:translateY(160%) scale(.7) rotate(8deg);transition:transform .8s cubic-bezier(.34,1.56,.64,1),opacity .4s}
+.eyes.show{opacity:1;transform:none}
+.eyes .eye{position:relative;width:clamp(36px,4.2vw,54px);height:clamp(44px,5.2vw,66px);border-radius:50%;overflow:hidden;background:radial-gradient(circle at 50% 35%,#fff,#DDE6E1);box-shadow:0 0 0 2px rgba(0,230,118,.65),0 10px 34px rgba(0,230,118,.3),inset 0 -6px 12px rgba(0,0,0,.18)}
+.eyes .pupil{position:absolute;left:50%;top:50%;width:52%;height:44%;margin:-22% 0 0 -26%;border-radius:50%;background:radial-gradient(circle at 50% 50%,#020806 0 34%,#00B35F 38%,#00E676 100%);transform:translate(var(--px,0px),var(--py,0px)) scale(var(--ps,1));transition:transform .09s linear}
+.eyes .pupil::after{content:"";position:absolute;left:22%;top:16%;width:22%;height:22%;border-radius:50%;background:#fff;opacity:.9}
+.eyes .lid{position:absolute;inset:-2px;background:linear-gradient(#0B1210,#0F1A16);transform:translateY(-102%);transition:transform .1s ease-in;border-bottom:2px solid rgba(0,230,118,.6)}
+.eyes.blink .lid{transform:translateY(0)}
+.eyes.sleepy .lid{transform:translateY(-62%)}
+
+@media (max-width:760px){.band{padding:12px 0}.eyes{bottom:14px;right:12px}}
+@media (prefers-reduced-motion:reduce){.band .track,.more .chev,.caret{animation:none}.fx.fx{transform:none;opacity:1}#sp{display:none}.eyes{display:none}}
+main{overflow-x:clip}
