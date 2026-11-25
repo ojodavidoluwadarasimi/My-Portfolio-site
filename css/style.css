@@ -128,7 +128,7 @@ html:not(.js) .rv{opacity:1;transform:none}html:not(.js) h2 .ln span{transform:n
 .badge .pay{width:20px;height:20px;border-radius:5px;background:#00C3F7;display:grid;place-items:center;color:#04121A;font-weight:700;font-size:.72rem;font-family:var(--body)}
 .badge.learn{border-style:dashed;color:var(--mute);padding-left:16px}
 .badge.learn:hover{color:var(--text)}
-.js .badges .badge{opacity:0;transform:translateY(14px);transition:opacity .7s var(--ease),transform .7s var(--ease),border-color .3s,background .3s}
+.js .row .badge{opacity:0;transform:translateY(14px);transition:opacity .7s var(--ease),transform .7s var(--ease),border-color .3s,background .3s}
 .js .row.in .badge{opacity:1;transform:none}
 .row.in .badge:nth-child(2){transition-delay:.06s}.row.in .badge:nth-child(3){transition-delay:.12s}.row.in .badge:nth-child(4){transition-delay:.18s}.row.in .badge:nth-child(5){transition-delay:.24s}.row.in .badge:nth-child(6){transition-delay:.3s}
 .row.in .badge:hover{transition-delay:0s}
@@ -138,8 +138,8 @@ html:not(.js) .rv{opacity:1;transform:none}html:not(.js) h2 .ln span{transform:n
 .proj{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(28px,5vw,80px);align-items:center;padding:clamp(40px,6vw,84px) 0;border-top:1px solid var(--line)}
 .proj:nth-of-type(even){grid-template-columns:minmax(0,1fr) minmax(0,1.25fr)}
 .proj:nth-of-type(even) .vis{order:2}
-.vis{position:relative;aspect-ratio:16/11;overflow:hidden;border-radius:6px;border:1px solid var(--line-2);background:#0C0F11}
-.vis img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;transform:scale(calc(1.07 - var(--p,0)*.07));transition:transform .2s linear}
+.vis{position:relative;aspect-ratio:var(--ar,16/11);overflow:hidden;border-radius:6px;border:1px solid var(--line-2);background:#0C0F11}
+.vis img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;transform:scale(calc(1.03 - var(--p,0)*.03));transition:transform .2s linear}
 .plate{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(18px,3vw,34px);background:
   radial-gradient(70% 80% at 85% 10%,rgba(0,230,118,.22),transparent 70%),
   linear-gradient(135deg,#0E1214,#0A0D0F)}
