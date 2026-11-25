@@ -25,8 +25,10 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/sections.css">
 <link rel="stylesheet" href="css/capabilities.css">
+<link rel="stylesheet" href="css/motion.css">
 </head>
 <body>
+<div id="sp" aria-hidden="true"></div>
 <a class="sr" href="#main">Skip to content</a>
 
 <header class="top">
@@ -79,13 +81,21 @@
       <h2 data-split><span class="ln"><span>Beyond</span></span><span class="ln"><span>the code.</span></span></h2>
     </div>
     <div class="about-body">
-      <p class="rv">I am an aspiring software engineer driven by curiosity about <strong>how technology works</strong>, how intelligent systems are built and how software can solve practical problems.</p>
-      <p class="rv">My interests span artificial intelligence, systems engineering and quantitative development. I enjoy exploring technical concepts, experimenting with ideas and turning what I learn into functional products.</p>
-      <p class="rv">I believe engineering is more than writing code. It is about <strong>understanding problems, designing solutions and building systems</strong> that create meaningful impact.</p>
+      <p class="rv" id="about-lead">I'm Ojo David Oluwadarasimi, a developer driven by the desire to turn ideas into meaningful digital products. I enjoy creating things that people can interact with and find useful, from visually engaging websites and online stores to educational platforms and custom web applications.</p>
+      <div class="about-more" id="about-more"><div class="am-in" id="typed">
+        <p data-type>My approach to development goes beyond making things look good. I enjoy understanding the problem behind an idea, figuring out how its different parts should work together and bringing the solution to life through code.</p>
+        <p data-type>I've explored this through projects like ScoreWise CBT Portal and Kicks &amp; Cuffs, where I've worked on building practical digital experiences that address real needs.</p>
+        <p data-type>Beyond web development, I'm particularly interested in artificial intelligence, systems engineering and quantitative development. I'm constantly learning, experimenting and challenging myself to understand technology at a deeper level.</p>
+        <p data-type>My goal is to grow into an engineer capable of designing and building reliable, intelligent and impactful systems.</p>
+      </div></div>
+      <button class="btn g more" id="more" type="button" aria-expanded="false" aria-controls="about-more"><span class="lbl">Read more</span> <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></button>
     </div>
     <div class="res-row rv"><a class="btn p res" href="assets/Ojo-David-Oluwadarasimi-Resume.pdf" download="Ojo-David-Oluwadarasimi-Resume.pdf" data-resume>Download Résumé <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16"/></svg></a><small>PDF · 1 page</small></div>
   </div>
 </section>
+
+<div class="band" aria-hidden="true"><div class="track"><span>HTML5</span><i></i><span>CSS3</span><i></i><span>JavaScript</span><i></i><span>Python</span><i></i><span>FastAPI</span><i></i><span>Supabase</span><i></i><span>PostgreSQL</span><i></i><span>Paystack</span><i></i><span>Vercel</span><i></i><span>Git</span><i></i><span>GitHub</span><i></i><span>HTML5</span><i></i><span>CSS3</span><i></i><span>JavaScript</span><i></i><span>Python</span><i></i><span>FastAPI</span><i></i><span>Supabase</span><i></i><span>PostgreSQL</span><i></i><span>Paystack</span><i></i><span>Vercel</span><i></i><span>Git</span><i></i><span>GitHub</span><i></i></div></div>
+<div class="band rev" aria-hidden="true"><div class="track"><span>HTML5</span><i></i><span>CSS3</span><i></i><span>JavaScript</span><i></i><span>Python</span><i></i><span>FastAPI</span><i></i><span>Supabase</span><i></i><span>PostgreSQL</span><i></i><span>Paystack</span><i></i><span>Vercel</span><i></i><span>Git</span><i></i><span>GitHub</span><i></i><span>HTML5</span><i></i><span>CSS3</span><i></i><span>JavaScript</span><i></i><span>Python</span><i></i><span>FastAPI</span><i></i><span>Supabase</span><i></i><span>PostgreSQL</span><i></i><span>Paystack</span><i></i><span>Vercel</span><i></i><span>Git</span><i></i><span>GitHub</span><i></i></div></div>
 
 <section id="approach">
   <div class="wrap">
@@ -346,6 +356,8 @@
 
 <script src="js/main.js" defer></script>
 <script src="js/bg.js" defer></script>
+<script src="js/typing.js" defer></script>
+<script src="js/motion.js" defer></script>
 <script src="js/data.js" defer></script>
 <script src="js/case-studies.js" defer></script>
 <script src="js/notebook.js" defer></script>

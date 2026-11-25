@@ -28,3 +28,9 @@ Accent `#00E676`, background `#090B0D`. Change them in `:root` at the top of `cs
 
 ## Capabilities
 - `css/capabilities.css`: "What I Can Build" (6 cards, real screenshots for 01 to 03, labelled illustrative graphics for 04 to 06).
+
+## Motion layer
+- `js/typing.js`: About "Read more" types the rest of the text like a person (variable speed, punctuation pauses, hesitations, corrected typos). Runs on timers, so it continues while scrolling. "Skip typing" finishes instantly.
+- `js/motion.js` + `css/motion.css`: scroll progress bar, cards that fold open as they scroll in, 3D tilt and spotlight on hover, magnetic buttons, skills marquee bands, and the eyes that peek in, follow the pointer and blink.
+- `js/bg.js`: now also draws a 3D wireframe that spins with scroll and leans toward the pointer.
+- All of it is off for visitors who prefer reduced motion.
