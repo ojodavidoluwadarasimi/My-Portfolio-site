@@ -14,10 +14,14 @@ Open `index.html` in a browser, or run `python3 -m http.server` in this folder.
 ## Deploy
 Netlify: drag this folder in, or connect the repository (publish directory is the root, no build command).
 
-## Adding project screenshots
-In `index.html`, inside each `.vis` block, add above the `.plate` div:
-`<img src="assets/scorewise.webp" alt="..." loading="lazy" onload="this.parentElement.classList.add('has-shot')">`
-The placeholder panel hides itself once the image loads.
+## Project banners
+Banners live in `assets/scorewise.webp` and `assets/kicks-and-cuffs.webp`. To change one, replace the file keeping the same name; each `.vis` block in `index.html` sets its own aspect ratio with `--ar`.
 
 ## Design tokens
 Accent `#00E676`, background `#090B0D`. Change them in `:root` at the top of `css/style.css`.
+
+## Upgrade notes
+- New sections: Engineering Approach, Currently Building, case studies (inside each project), Engineering Notebook, Systems Lab, GitHub.
+- `css/sections.css` styles the new sections. `js/data.js` holds Notebook articles, planned lab experiments and the repo list: add real entries there only.
+- `js/github.js` loads public repo info from the GitHub API and falls back to static text if it fails.
+- Résumé: `assets/Ojo-David-Oluwadarasimi-Resume.pdf` (linked from About and Contact).

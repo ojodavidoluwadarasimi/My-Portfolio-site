@@ -22,6 +22,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Sora:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add('js')</script>
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/sections.css">
 </head>
 <body>
 <a class="sr" href="#main">Skip to content</a>
@@ -35,10 +36,15 @@
   <ol>
     <li><a href="#home"><small>01</small>Home</a></li>
     <li><a href="#about"><small>02</small>About</a></li>
-    <li><a href="#technologies"><small>03</small>Technologies</a></li>
-    <li><a href="#projects"><small>04</small>Projects</a></li>
-    <li><a href="#interests"><small>05</small>Engineering Interests</a></li>
-    <li><a href="#contact"><small>06</small>Contact</a></li>
+    <li><a href="#approach"><small>03</small>Engineering Approach</a></li>
+    <li><a href="#technologies"><small>04</small>Technologies</a></li>
+    <li><a href="#building"><small>05</small>Currently Building</a></li>
+    <li><a href="#projects"><small>06</small>Projects</a></li>
+    <li><a href="#interests"><small>07</small>Engineering Interests</a></li>
+    <li><a href="#notebook"><small>08</small>Engineering Notebook</a></li>
+    <li><a href="#lab"><small>09</small>Systems Lab</a></li>
+    <li><a href="#github"><small>10</small>GitHub</a></li>
+    <li><a href="#contact"><small>11</small>Contact</a></li>
   </ol>
 </nav>
 
@@ -74,13 +80,29 @@
       <p class="rv">My interests span artificial intelligence, systems engineering and quantitative development. I enjoy exploring technical concepts, experimenting with ideas and turning what I learn into functional products.</p>
       <p class="rv">I believe engineering is more than writing code. It is about <strong>understanding problems, designing solutions and building systems</strong> that create meaningful impact.</p>
     </div>
+    <div class="res-row rv"><a class="btn p res" href="assets/Ojo-David-Oluwadarasimi-Resume.pdf" download="Ojo-David-Oluwadarasimi-Resume.pdf" data-resume>Download Résumé <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16"/></svg></a><small>PDF · 1 page</small></div>
+  </div>
+</section>
+
+<section id="approach">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="mono rv">03 / Engineering Approach</p>
+      <h2 data-split><span class="ln"><span>How I think.</span></span><span class="ln"><span>How I build.</span></span></h2>
+    </div>
+    <ol class="steps" data-row>
+      <li class="step rv"><span class="n">01</span><h3>Understand the Problem</h3><p>Requirements, constraints and expected outcomes.</p></li>
+      <li class="step rv"><span class="n">02</span><h3>Design the Solution</h3><p>Architecture, system components, data flow and technical decisions.</p></li>
+      <li class="step rv"><span class="n">03</span><h3>Build and Test</h3><p>Implementation, debugging, testing and validation.</p></li>
+      <li class="step rv"><span class="n">04</span><h3>Refine and Improve</h3><p>Performance, reliability, maintainability and scalability.</p></li>
+    </ol>
   </div>
 </section>
 
 <section id="technologies">
   <div class="wrap">
     <div class="sec-head">
-      <p class="mono rv">03 / Technologies</p>
+      <p class="mono rv">04 / Technologies</p>
       <h2 data-split><span class="ln"><span>The tools</span></span><span class="ln"><span>behind the build.</span></span></h2>
     </div>
     <div class="stack">
@@ -95,15 +117,31 @@
   </div>
 </section>
 
+<section id="building">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="mono rv">05 / Currently Building</p>
+      <h2 data-split><span class="ln"><span>Beyond what</span></span><span class="ln"><span>I've already built.</span></span></h2>
+    </div>
+    <div class="areas">
+      <article class="area rv"><span class="stat"><i></i>Learning</span><h3>C++ &amp; Computer Science</h3><p>Modern C++, OOP, memory management, data structures and algorithms.</p></article>
+      <article class="area rv"><span class="stat"><i></i>Exploring</span><h3>Systems Engineering</h3><p>Operating systems, networking, concurrency, distributed systems and system design.</p></article>
+      <article class="area rv"><span class="stat"><i></i>Exploring</span><h3>Artificial Intelligence</h3><p>Python, machine learning fundamentals, data processing and intelligent applications.</p></article>
+      <article class="area rv"><span class="stat"><i></i>Learning</span><h3>Quantitative Development</h3><p>Mathematics, algorithms, numerical computing, financial computing and high performance systems.</p></article>
+    </div>
+  </div>
+</section>
+
 <section id="projects">
   <div class="wrap">
     <div class="sec-head">
-      <p class="mono rv">04 / Projects</p>
+      <p class="mono rv">06 / Projects</p>
       <h2 data-split><span class="ln"><span>Selected work.</span></span><span class="ln"><span>Built to solve real problems.</span></span></h2>
     </div>
 
     <article class="proj" id="scorewise">
-      <div class="vis rv" data-vis>
+      <div class="vis rv" data-vis style="--ar:720/400">
+        <img src="assets/scorewise.webp" width="1440" height="800" alt="ScoreWise CBT Portal home page: Study smart and own 100 level, with course and mock exam buttons" loading="lazy" onload="this.parentElement.classList.add('has-shot')" onerror="this.remove()">
         <div class="plate"><span class="mono">Project 01 / Live</span><b>ScoreWise<br>CBT Portal</b></div>
       </div>
       <div class="p-body rv">
@@ -119,12 +157,26 @@
         <div class="links">
           <a class="btn p" href="https://scorewise-cbt-portal.vercel.app/" target="_blank" rel="noopener noreferrer">Live Preview <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
           <a class="btn g" href="https://github.com/ojodavidoluwadarasimi/scorewise-cbt-portal" target="_blank" rel="noopener noreferrer">Source Code <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <button class="btn g cs-toggle" type="button" aria-expanded="false" aria-controls="cs-scorewise"><span class="lbl">Read case study</span> <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
         </div>
+      </div>
+      <div class="cs" id="cs-scorewise" role="region" aria-label="Case study">
+        <div class="cs-in"><div class="cs-grid">
+          <div><h4>Overview</h4><p>A computer based testing platform designed to help students prepare for JAMB UTME and Post-UTME examinations through realistic practice.</p></div><div><h4>Problem being addressed</h4><p>Many students lack access to authentic computer based exam practice that mirrors the real JAMB interface and experience.</p></div>
+          <div class="wide"><h4>Solution</h4><p>ScoreWise provides a realistic CBT environment with timed exams, subject categories, authentication, performance tracking, examination review and an expanding question bank.</p></div>
+          <div><h4>Key implemented features</h4><ul><li>Interactive examinations with a realistic CBT interface</li><li>Subject categories and levels</li><li>Student authentication</li><li>Performance tracking and review</li><li>Expanding question bank</li><li>Keyboard shortcuts</li><li>Dark mode</li><li>Short lessons and study helpers</li></ul></div>
+          <div><h4>Technology stack</h4><p>HTML5, CSS3, JavaScript, Python, FastAPI, Supabase, PostgreSQL, Vercel.</p></div>
+          <div class="wide"><h4>System architecture</h4><div class="flow"><b>Frontend · HTML / CSS / JS</b><em>→</em><b>FastAPI backend</b><em>→</em><b>Supabase · PostgreSQL + Auth</b><em>·</em><b>Vercel</b></div></div>
+          <div><h4>Important engineering decisions</h4><ul><li>Realistic exam UI that closely mirrors the official CBT experience</li><li>Supabase for rapid authentication and database needs</li><li>Progressive feature addition while keeping the core exam flow solid</li></ul></div><div><h4>Challenges encountered</h4><ul><li>Creating a faithful CBT interface that remains usable</li><li>Managing question data and performance tracking cleanly</li><li>Balancing feature richness with simplicity for students</li></ul></div>
+          <div><h4>Lessons learned</h4><ul><li>Real user context drives better design decisions</li><li>A working vertical slice is more valuable early than many incomplete features</li><li>Clear separation between exam interface and supporting tools improves maintainability</li></ul></div><div><h4>Potential improvements</h4><ul><li>Richer analytics</li><li>More advanced question generation</li><li>Better admin tooling</li><li>Performance and accessibility refinements</li></ul></div>
+          <div class="wide"><div class="links"><a class="btn p" href="https://scorewise-cbt-portal.vercel.app/" target="_blank" rel="noopener noreferrer">Live project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a><a class="btn g" href="https://github.com/ojodavidoluwadarasimi/scorewise-cbt-portal" target="_blank" rel="noopener noreferrer">GitHub repository <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div></div>
+        </div></div>
       </div>
     </article>
 
     <article class="proj" id="kicks">
-      <div class="vis rv" data-vis>
+      <div class="vis rv" data-vis style="--ar:720/495">
+        <img src="assets/kicks-and-cuffs.webp" width="1440" height="990" alt="Kicks and Cuffs home page: Monday to Friday, then the weekend, with shop corporate and shop sneakers buttons" loading="lazy" onload="this.parentElement.classList.add('has-shot')" onerror="this.remove()">
         <div class="plate"><span class="mono">Project 02 / Live</span><b>Kicks &amp;<br>Cuffs</b></div>
       </div>
       <div class="p-body rv">
@@ -140,7 +192,20 @@
         <div class="links">
           <a class="btn p" href="https://kicks-and-cuffs.vercel.app/" target="_blank" rel="noopener noreferrer">Live Preview <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
           <a class="btn g" href="https://github.com/ojodavidoluwadarasimi/kicks-and-cuffs" target="_blank" rel="noopener noreferrer">Source Code <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          <button class="btn g cs-toggle" type="button" aria-expanded="false" aria-controls="cs-kicks"><span class="lbl">Read case study</span> <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
         </div>
+      </div>
+      <div class="cs" id="cs-kicks" role="region" aria-label="Case study">
+        <div class="cs-in"><div class="cs-grid">
+          <div><h4>Overview</h4><p>An e-commerce platform focused on footwear, built as a real online store for small sellers.</p></div><div><h4>Problem being addressed</h4><p>Small footwear sellers often lack a clean, functional online store that handles size based inventory, payments and order tracking without excessive complexity.</p></div>
+          <div class="wide"><h4>Solution</h4><p>Kicks &amp; Cuffs is a working e-commerce experience that supports product discovery, size based inventory, cart, checkout, online payments through Paystack, order tracking and an owner dashboard.</p></div>
+          <div><h4>Key implemented features</h4><ul><li>Product discovery and browsing</li><li>Size based inventory management</li><li>Shopping cart</li><li>Checkout flow</li><li>Online payments with Paystack</li><li>Order tracking</li><li>Owner dashboard</li></ul></div>
+          <div><h4>Technology stack</h4><p>HTML5, CSS3, JavaScript, PostgreSQL, Supabase, Paystack, Vercel.</p></div>
+          <div class="wide"><h4>System architecture</h4><div class="flow"><b>Storefront · HTML / CSS / JS</b><em>→</em><b>Supabase · PostgreSQL + Auth</b><em>·</em><b>Paystack payments</b><em>·</em><b>Vercel</b></div></div>
+          <div><h4>Important engineering decisions</h4><ul><li>Size as a first class inventory dimension</li><li>Real Paystack payments, with payment handling kept off the client through a Supabase Edge Function</li><li>Simple owner dashboard for operational control</li><li>Clean, product focused UI</li></ul></div><div><h4>Challenges encountered</h4><ul><li>Correct size based stock handling</li><li>Reliable payment and order state management</li><li>Building something that feels like a real store rather than a demo</li></ul></div>
+          <div><h4>Lessons learned</h4><ul><li>Real payment and inventory constraints force better system design</li><li>Small sellers need clarity and reliability more than feature volume</li><li>Practical end to end flows matter more than theoretical architecture early on</li></ul></div><div><h4>Potential improvements</h4><ul><li>Better inventory alerts and analytics</li><li>Improved order management tooling</li><li>Performance and mobile refinements</li><li>Additional payment or delivery options</li></ul></div>
+          <div class="wide"><div class="links"><a class="btn p" href="https://kicks-and-cuffs.vercel.app/" target="_blank" rel="noopener noreferrer">Live project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a><a class="btn g" href="https://github.com/ojodavidoluwadarasimi/kicks-and-cuffs" target="_blank" rel="noopener noreferrer">GitHub repository <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></div></div>
+        </div></div>
       </div>
     </article>
   </div>
@@ -149,7 +214,7 @@
 <section id="interests">
   <div class="wrap">
     <div class="sec-head">
-      <p class="mono rv">05 / Engineering Interests</p>
+      <p class="mono rv">07 / Engineering Interests</p>
       <h2 data-split><span class="ln"><span>The problems</span></span><span class="ln"><span>I want to understand.</span></span></h2>
     </div>
     <div class="int">
@@ -161,13 +226,46 @@
   </div>
 </section>
 
+<section id="notebook">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="mono rv">08 / Engineering Notebook</p>
+      <h2 data-split><span class="ln"><span>Thoughts, experiments</span></span><span class="ln"><span>&amp; technical notes.</span></span></h2>
+    </div>
+    <div id="nb-list" class="rv"></div>
+  </div>
+</section>
+
+<section id="lab">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="mono rv">09 / Architecture &amp; Systems Lab</p>
+      <h2 data-split><span class="ln"><span>Experimenting</span></span><span class="ln"><span>with systems.</span></span></h2>
+    </div>
+    <div id="lab-list" class="rv"></div>
+    <p class="lab-note rv">Experiments listed here are planned. No results are published until they are measured.</p>
+  </div>
+</section>
+
+<section id="github">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="mono rv">10 / GitHub</p>
+      <h2 data-split><span class="ln"><span>Selected</span></span><span class="ln"><span>repositories.</span></span></h2>
+    </div>
+    <div id="gh-list" class="repos rv"></div>
+    <p class="gh-more rv"><a class="btn g" href="https://github.com/ojodavidoluwadarasimi" target="_blank" rel="noopener noreferrer">All activity on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a></p>
+  </div>
+</section>
+
 <section id="contact">
   <div class="wrap">
     <div class="contact-grid">
       <div>
-        <p class="mono acc rv" style="margin-bottom:18px">06 / Contact</p>
+        <p class="mono acc rv" style="margin-bottom:18px">11 / Contact</p>
         <h2 data-split><span class="ln"><span>Have an idea?</span></span><span class="ln"><span>Let's build something</span></span><span class="ln"><span>meaningful.</span></span></h2>
         <p class="lead rv">Open to conversations about software projects, engineering collaborations, technical opportunities and interesting ideas.</p>
+        <div class="res-row rv"><a class="btn g res" href="assets/Ojo-David-Oluwadarasimi-Resume.pdf" download="Ojo-David-Oluwadarasimi-Resume.pdf" data-resume>Download Résumé <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16"/></svg></a></div>
       </div>
       <div class="rv">
         <div class="icons" role="list">
@@ -201,5 +299,9 @@
 </footer>
 
 <script src="js/main.js" defer></script>
+<script src="js/data.js" defer></script>
+<script src="js/case-studies.js" defer></script>
+<script src="js/notebook.js" defer></script>
+<script src="js/github.js" defer></script>
 </body>
 </html>
