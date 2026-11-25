@@ -34,3 +34,9 @@ Accent `#00E676`, background `#090B0D`. Change them in `:root` at the top of `cs
 - `js/motion.js` + `css/motion.css`: scroll progress bar, cards that fold open as they scroll in, 3D tilt and spotlight on hover, magnetic buttons, skills marquee bands, and the eyes that peek in, follow the pointer and blink.
 - `js/bg.js`: now also draws a 3D wireframe that spins with scroll and leans toward the pointer.
 - All of it is off for visitors who prefer reduced motion.
+
+## Background tire
+A faint vertical tire sits at the right edge and rolls with scroll (js/bg.js, tire()). Opacity and size are set on the `vis` and `R` lines if you want it even quieter.
+
+## What I Can Build
+Shows the three cards that have real screenshots.
