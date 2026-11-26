@@ -2,9 +2,9 @@
 .caps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:56px}
 .cap{display:flex;flex-direction:column;border:1px solid rgba(255,255,255,.09);border-radius:18px;background:rgba(255,255,255,.025);overflow:hidden;transition:border-color .45s,transform .55s var(--ease),background .45s}
 .cap:hover{border-color:rgba(0,230,118,.45);transform:translateY(-5px);background:rgba(0,230,118,.035)}
-.cap-vis{position:relative;aspect-ratio:16/10;background:#0D1114;border-bottom:1px solid rgba(255,255,255,.07);overflow:hidden}
-.cap-vis img,.cap-vis svg{display:block;width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform 1.1s var(--ease)}
-.cap:hover .cap-vis img,.cap:hover .cap-vis svg{transform:scale(1.04)}
+.cap-vis{position:relative;aspect-ratio:3/2;background:#0D1114;border-bottom:1px solid rgba(255,255,255,.07);overflow:hidden}
+.cap-vis img,.cap-vis svg{display:block;width:100%;height:100%;object-fit:contain;object-position:center;transition:transform 1.1s var(--ease)}
+.cap:hover .cap-vis img,.cap:hover .cap-vis svg{transform:scale(1.015)}
 .cap-vis .tag{position:absolute;left:12px;bottom:12px;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:999px;background:rgba(9,11,13,.82);border:1px solid rgba(255,255,255,.18);color:#B4BEB9}
 .cap-vis .tag.real{border-color:rgba(0,230,118,.5);color:var(--acc)}
 .cap-body{padding:24px 24px 26px;display:flex;flex-direction:column;gap:12px;flex:1}
