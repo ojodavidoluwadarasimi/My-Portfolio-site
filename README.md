@@ -40,3 +40,10 @@ A faint vertical tire sits at the right edge and rolls with scroll (js/bg.js, ti
 
 ## What I Can Build
 Shows the three cards that have real screenshots.
+
+## 3D vehicle (optional, needs your model)
+`js/vehicle.js` (Three.js bundled, source in the build step) loads `assets/car.glb` if it exists. Until you add that file nothing runs and the tire stays.
+- assets/car.glb is the Revuelto 3.0 by SDC PERFORMANCE (CC BY 4.0), resized and compressed. The footer credit is required by that licence, keep it. Replace the file to use another model (Draco and Meshopt work).
+- If the car faces the wrong way, change `facing` in the CFG line of the source (Math.PI or 0) and rebuild.
+- Shows only in About, Approach, Technologies, Currently Building and Interests at low opacity; hidden in Hero, Projects, What I Can Build, Notebook, Lab, GitHub and Contact.
+- Engine sound is synthesised with Web Audio (no recordings). It is off until the visitor presses the Engine button.
