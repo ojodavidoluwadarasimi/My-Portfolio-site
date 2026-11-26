@@ -79,7 +79,9 @@
   /* eyes */
   var eyes=document.createElement('div');eyes.className='eyes';eyes.setAttribute('aria-hidden','true');
   eyes.innerHTML='<div class="eye"><i class="pupil"></i><i class="lid"></i></div><div class="eye"><i class="pupil"></i><i class="lid"></i></div>';
+  var hello=document.createElement('span');hello.className='hello';hello.textContent='NICE TO HAVE YOU HERE.';eyes.appendChild(hello);
   document.body.appendChild(eyes);
+  var greeted=false;try{greeted=sessionStorage.getItem('greeted')==='1'}catch(e){}
   var pup=[].slice.call(eyes.querySelectorAll('.pupil')),eyeEls=[].slice.call(eyes.querySelectorAll('.eye'));
   var tx=vw/2,ty=vh/2,lastPtr=0,shown=false,hideT=0,lastShow=0,onLink=false;
   function aim(x,y){tx=x;ty=y;lastPtr=performance.now()}
@@ -122,6 +124,8 @@
     var now=performance.now();
     if(shown||menuOpen()||now-lastShow<7000)return;
     shown=true;lastShow=now;eyes.classList.add('show');
+    if(!greeted){greeted=true;try{sessionStorage.setItem('greeted','1')}catch(e){}
+      setTimeout(function(){eyes.classList.add('greet')},500);setTimeout(function(){eyes.classList.remove('greet')},3300);ms=Math.max(ms||0,4800)}
     clearTimeout(hideT);hideT=setTimeout(hide,ms||5200);
   }
   /* while the visitor is scrolling the eyes stay, so they can be watched looking down and up */

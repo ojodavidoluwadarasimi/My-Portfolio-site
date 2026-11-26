@@ -14,6 +14,7 @@
      Wheel angle = distance scrolled / radius, so the tread really looks like it grips the road. */
   var ss=0; /* smoothed scroll, gives a little inertia */
   function tire(){
+    if(window.__carOn)return;
     var vis=Math.min(1,Math.max(0,(sy-H*.4)/(H*.5)))*(W<760?.2:.3);if(vis<=.01)return;
     ss+=(sy-ss)*.16;
     var R=Math.max(54,Math.min(W<760?56:96,Math.min(W,H)*.13)),s=R/170;
